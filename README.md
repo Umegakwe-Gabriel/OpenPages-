@@ -19,6 +19,28 @@ The website serves as a blogging and personal publishing platform inspired by Me
 - Form submission (Contact page)
 - Accessible design following WCAG 2.1 standards
 - Organized structure for easy maintenance
+# OpenPages — Capstone Web Development Project  
+Created by: **Umegakwe Gabriel**  
+Course: **Web Development – Capstone Project**
+
+---
+
+## 📌 Project Overview
+OpenPages is a clean, modern, creativity-focused writing platform designed to help users write, organize, and showcase their work. The site includes:
+
+- Home page  
+- About page  
+- Blog page  
+- Editorial Calendar  
+- Image Gallery  
+- Contact form  
+- Added interactivity (JavaScript)  
+- SEO description meta tags  
+- Responsive, fully styled layout  
+
+---
+
+## 📁 Project Structure
 
 ---
 
