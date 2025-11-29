@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenPages · Home</title>
-  <link rel="stylesheet" href="styles/main.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenPages — Write. Share. Grow.</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-  
-<header>
-  <div class="container header-content">
-    <img src="assets/logo.png" alt="OpenPages Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="calendar.html">Editorial Calendar</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+
+<header class="site-header">
+  <div class="navbar">
+    <div class="brand">
+      <span class="logo-dot"></span>
+      <span>OpenPages</span>
+    </div>
+    <nav class="navlinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>OpenPages</h1>
-      <p>A clean, writer‑first platform to share your voice with the world.</p>
-      <a href="calendar.html" class="btn">View Editorial Calendar</a>
+<section class="hero">
+  <div class="hero-card">
+    <div class="hero-img"></div>
+
+    <div class="hero-body">
+      <h1>Write. Share. Grow.</h1>
+      <p class="lead">OpenPages is your clean, focused space for writing and creative exploration.</p>
+
+      <div class="cta-row">
+        <a class="button primary" href="blog.html">Explore the Blog</a>
+        <a class="button ghost" href="gallery.html">Browse Gallery</a>
+      </div>
+
+      <!-- NEW ALERT BUTTON -->
+      <button id="openpages-alert-btn" class="button primary" style="margin-top:1rem;">
+        What is OpenPages?
+      </button>
     </div>
-  </section>
-  <main class="container">
-    <h2>Welcome to OpenPages</h2>
-    <p>
-      OpenPages is designed to help writers, journalists, and creators publish and manage stories effortlessly. 
-      It combines elegant design with practical tools — like our editorial calendar — to keep everything organized.
-    </p>
-    <div class="features">
-      <div class="feature-card">
-        <h3>Beautiful Writing</h3>
-        <p>Minimal distractions, elegant typography, and flexible layouts.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Editorial Calendar</h3>
-        <p>Plan, schedule, and track your content in one place.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Grow Your Reach</h3>
-        <p>SEO-friendly publishing tools to help your stories go further.</p>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 OpenPages. Built with ❤️ for creators.</p>
-  </footer>
+  </div>
+</section>
+
+<main class="container">
+  <h2 class="section-title">Highlights</h2>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Weekly Prompts</h3>
+      <p>Spark ideas with themed prompts for fiction, essays, and poetry.</p>
+    </article>
+
+    <article class="card">
+      <h3>Editorial Calendar</h3>
+      <p>Plan series, track drafts, and schedule releases in one place.</p>
+    </article>
+
+    <article class="card">
+      <h3>Creator Gallery</h3>
+      <p>Visual inspirations that pair with your words—see our curated board.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© 2025 OpenPages — Curated writing & creativity</div>
+    <div><a href="#">Back to top</a></div>
+  </div>
+</footer>
+
 </body>
 </html>
