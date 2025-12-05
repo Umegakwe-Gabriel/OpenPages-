@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact — OpenPages</title>
-
-<meta name="description" content="Contact OpenPages to share ideas, ask questions, or connect with our writing community.">
-
-<link rel="stylesheet" href="css/style.css">
-<script src="script.js" defer></script>
-</head>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — OpenPages</title>
+    <meta name="description" content="Contact OpenPages for questions, writing support, collaboration inquiries, or creative assistance. Send us a message and our team will respond shortly.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>    
 <body>
 
 <header class="site-header">
@@ -34,33 +30,42 @@
 
 <main class="container">
 
-<h2 class="section-title">Contact</h2>
+  <h2 class="section-title">Contact</h2>
 
-<div class="columns">
+  <!-- ========= NEW ERROR SUMMARY ========= -->
+  <div id="form-errors" class="form-errors" tabindex="-1"></div>
 
-  <div class="form-card">
-    <form id="contactForm" method="post" action="https://webdevbasics.net/scripts/demo.php">
+  <div class="columns">
 
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" required>
+    <div class="form-card">
 
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" required>
+      <form id="contact-form" method="post"
+            action="https://webdevbasics.net/scripts/demo.php" novalidate>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+        <label for="name">Name *</label>
+        <input id="name" type="text" name="name">
 
-      <input type="submit" value="Send Message">
-    </form>
+        <label for="email">Email *</label>
+        <input id="email" type="email" name="email">
+
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject">
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6"></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+
+    </div>
+
+    <aside class="card">
+      <h3>Get in touch</h3>
+      <p>We love hearing from writers, editors, and readers. Say hello and we’ll reply soon.</p>
+      <img src="creative_workspace.jpg" alt="Workspace with notebook and keyboard">
+    </aside>
+
   </div>
-
-  <aside class="card">
-    <h3>Get in touch</h3>
-    <p>We love hearing from writers, editors, and readers. Say hello and we’ll reply soon.</p>
-    <img src="images/creative_workspace.jpg" alt="Creative workspace image">
-  </aside>
-
-</div>
 
 </main>
 
