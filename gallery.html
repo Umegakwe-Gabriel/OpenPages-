@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gallery — OpenPages</title>
-
-<meta name="description" content="Explore the OpenPages creative gallery featuring writing visuals, inspiration boards, books, and creative workspaces.">
-
-<link rel="stylesheet" href="css/style.css">
-<script src="script.js" defer></script>
-
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — OpenPages</title>
+    <meta name="description" content="Explore the OpenPages visual gallery featuring creative workspaces, collaboration scenes, writing inspiration, and moodboard images designed to spark new ideas.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>    
 <body>
 
 <header class="site-header">
@@ -33,42 +29,63 @@
 </header>
 
 <main class="container">
-<h2 class="section-title">Creator Gallery</h2>
 
-<!-- IMAGE GALLERY -->
-<div class="gallery-grid">
+  <h2 class="section-title">Creator Gallery</h2>
 
-<figure class="gallery-item">
-  <img src="images/writing_collab.jpg" alt="Writers collaborating">
-  <figcaption class="gallery-title">Collaboration</figcaption>
-</figure>
+  <!-- ====== NEW SLIDESHOW ====== -->
+  <section class="slideshow-wrapper">
+    <div class="slideshow">
+      <div class="slideshow-image-frame">
+        <img id="slideshow-image" src="writing_collab.jpg"
+             alt="Two people collaborating on writing with laptops.">
+      </div>
 
-<figure class="gallery-item">
-  <img src="images/creative_workspace.jpg" alt="Creative workspace">
-  <figcaption class="gallery-title">Workspace</figcaption>
-</figure>
+      <p id="slideshow-caption" class="slideshow-caption">
+        Real-time collaboration on drafts.
+      </p>
 
-<figure class="gallery-item">
-  <img src="images/book_stack.jpg" alt="Stack of books">
-  <figcaption class="gallery-title">Reading List</figcaption>
-</figure>
+      <div class="slideshow-controls">
+        <button type="button" id="slide-prev" class="btn-secondary">‹ Prev</button>
+        <button type="button" id="slide-next" class="btn-secondary">Next ›</button>
+      </div>
 
-<figure class="gallery-item">
-  <img src="images/author_thinking.jpg" alt="Writer thinking and writing">
-  <figcaption class="gallery-title">Ideation</figcaption>
-</figure>
+      <div id="slideshow-dots" class="slideshow-dots"></div>
+    </div>
+  </section>
 
-<figure class="gallery-item">
-  <img src="images/inspiration_light.jpg" alt="Inspiration light bulb">
-  <figcaption class="gallery-title">Inspiration</figcaption>
-</figure>
+  <!-- OLD GALLERY GRID (unchanged) -->
+  <div class="gallery-grid">
+    <figure class="gallery-item">
+      <img src="writing_collab.jpg" alt="Hands and laptops collaborating on writing">
+      <figcaption class="gallery-title">Collaboration</figcaption>
+    </figure>
 
-<figure class="gallery-item">
-  <img src="images/blog_banner.jpg" alt="Blog banner">
-  <figcaption class="gallery-title">Publishing</figcaption>
-</figure>
+    <figure class="gallery-item">
+      <img src="creative_workspace.jpg" alt="Minimal creative workspace with notebook and plant">
+      <figcaption class="gallery-title">Workspace</figcaption>
+    </figure>
 
-</div>
+    <figure class="gallery-item">
+      <img src="book_stack.jpg" alt="Stack of books">
+      <figcaption class="gallery-title">Reading List</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="author_thinking.jpg" alt="Writer brainstorming">
+      <figcaption class="gallery-title">Ideation</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="inspiration_light.jpg" alt="Light bulb inspiration">
+      <figcaption class="gallery-title">Inspiration</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="blog_banner.jpg" alt="Blog banner">
+      <figcaption class="gallery-title">Publishing</figcaption>
+    </figure>
+  </div>
+
 </main>
 
 <footer class="site-footer">
